@@ -1,0 +1,14 @@
+{% extends 'main_app/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Register | {{ block.super }}{% endblock %}
+
+{% block headline %}<h1>Register for the PyCon Survival Guide</h1>{% endblock headline %}
+
+{% block content %}
+{% crispy form %}
+    <form action="" method="POST">
+        {% csrf_token %}
+
+    </form>
+{% endblock content %}

@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # main_app
+    'main_app',
+    # django Crispy Forms
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -118,3 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+print("base dir path", BASE_DIR)
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
